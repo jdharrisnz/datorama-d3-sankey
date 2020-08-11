@@ -10,7 +10,7 @@ This assumes your measurement is summable, and provides preference functions to 
 ## Preferences
 Add this code to the JS section of the Custom Widget Editor.
 
-The top part controls locale (decimals, thousands, currency, etc.), while the `num` and `pct` functions control things like how many decimals to include, whether it's currency or percent, etc.. Commas, dots, currency symbols and the like in the format specifiers must be given in US format. There are some instructions in the comments, but for a more thorough documentation, visit [d3-format](https://github.com/d3/d3-format).
+The top part controls locale (decimals, thousands, currency, etc.), while the `num` and `pct` functions control things like how many decimals to include, whether it's currency or percent, etc.. Commas, dots, currency symbols and the like in the format specifiers must be given in US format. There are some instructions in the comments, but for a more thorough documentation, visit [d3-format](https://github.com/d3/d3-format) and [play with an ineractive inerpreter to test quickly](http://bl.ocks.org/zanarmstrong/05c1e95bf7aa16c4768e).
 
 The last part controls how removal of nodes and links works, so that variable-length journeys can be shown. You may prefer to show ended journeys in the visualisation by linking back to a node labelled as such, or you may just prefer to remove the node, link, and label altogether. If you prefer the latter, add the names to be removed to this array - for example, `['', '(not set)']` would remove blanks and "(not set)".
 ```
