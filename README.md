@@ -65,6 +65,7 @@ To show labels and numbers on a row, instead of stacked in a column, add this to
 .labelContainer {
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .labelContainer .values {
