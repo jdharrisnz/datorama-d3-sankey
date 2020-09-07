@@ -46,6 +46,7 @@ The last part controls how removal of nodes and links works, so that variable-le
 ```
 
 ## Common Style Changes
+### Change the colour of the nodes
 To change the colour of the nodes, add this to the CSS section of the Custom Widget Editor. To look ideal, `grad-end` in the gradient should have the same colour as `.node`.
 ```
 #gradient {
@@ -55,6 +56,19 @@ To change the colour of the nodes, add this to the CSS section of the Custom Wid
 
 .node {
   fill: rgb(117, 161, 199);
+}
+```
+
+### Arrange labels and numbers horizontally
+To show labels and numbers on a row, instead of stacked in a column, add this to the CSS section of the Custom Widget Editor.
+```
+.labelContainer {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.labelContainer .values {
+  padding-left: 1ch;
 }
 ```
 
