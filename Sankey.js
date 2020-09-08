@@ -1,22 +1,5 @@
 var sankey = {
   'initialize': function(num, pct) {
-    // Check format functions and nullValues have been defined and if not, do
-      if (typeof num == 'undefined') {
-        function num(value) {
-          return d3.format(',.0f')(value);
-        }
-      }
-      
-      if (typeof pct == 'undefined') {
-        function pct(value) {
-          return d3.format(',.0%')(value);
-        }
-      }
-      
-      if (typeof nullValues == 'undefined') {
-        nullValues = [];
-      }
-    
     // Don't do anything if the query is invalid
       var query = DA.query.getQuery();
       if (Object.keys(query.fields).length === 0) {
