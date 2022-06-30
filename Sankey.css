@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   line-height: 0;
 }
@@ -17,12 +17,12 @@ svg {
 }
 
 .node {
-  fill: rgb(117, 161, 199);
+  fill: var(--gradient-end);
 }
 
 #gradient {
-  --grad-start: rgb(134, 188, 182);
-  --grad-end: rgb(117, 161, 199);
+  --grad-start: var(--gradient-start);
+  --grad-end: var(--gradient-end);
 }
 
 #node-0 {
@@ -37,9 +37,6 @@ svg {
 .labelContainer {
   position: absolute;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
   box-sizing: border-box;
   padding: 0 1ch 0 1ch;
   line-height: 1.2em;
@@ -71,8 +68,9 @@ svg {
 
 #tooltip {
   position: absolute;
+  width: 200px;
   z-index: 1;
-  transform: translateY(-25%);
+  transform: translateY(-25px);
   pointer-events: none;
   color: rgba(0, 1, 2, 0.67);
   line-height: normal;
