@@ -333,7 +333,7 @@ var sankey = {
 							tooltip
 							.style('top', event.y + 'px')
 							.style('left', () => {
-								if (d.target.substring(0, d.target.indexOf('\t')) == '1') {
+								if (d.target.substring(0, d.target.indexOf('\t')) == dimFields.length - 1) {
 									return event.x - 224 + 'px';
 								}
 								else {
